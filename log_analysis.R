@@ -13,7 +13,6 @@ for (i in 1:length(fl)){
   x <- rbind(x, df)
 }
 
-print(x)
 
 #受信時間を扱いやすい形に変更
 x$V11 <- format(strptime(x$V4, "[%d/%b/%Y:%H:%M:%S"), "%H")
